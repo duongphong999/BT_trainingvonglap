@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let number = +prompt('hãy nhập số hiển thị fibonacci đầu tiền:');
+        let num1=1;
+        let num2 = 1;
+        
+        let num3;
+        let tong = 2;
+
+        let i = 0;
+        while(i < number){
+            
+            num3=num1+num2;
+            tong += num3;
+            num1= num2;
+            num2 = num3;
+            document.write(num3+',');
+            
+            i++;
+
+
+        }
+            document.write('<br>'+tong);
+    </script>
+</body>
+</html>
